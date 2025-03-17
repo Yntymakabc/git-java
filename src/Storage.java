@@ -16,10 +16,20 @@ class Storage<T>{
     public int size(){
         return arr.size();
     }
+
+    public void seeAll(){
+        for(T i: arr){
+            System.out.println(i);
+        }
+    }
 }
 
 class Main{
     public static void main(String[] args) {
-
+    Storage<Integer> s = new Storage<>();
+    s.addItem(3);
+    s.addItem(4);
+        System.out.println(s.size());
+    s.seeAll();
     }
 }
