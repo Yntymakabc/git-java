@@ -250,6 +250,10 @@ public class W3 {
     //8. Write a Java program to retrieve the first element of the priority queue.
         PriorityQueue<String> ee = new PriorityQueue<>(Arrays.asList("AIBEK", "hela", "MAWQ"));
         dd.peek();
+
+    //6. Write a Java program to count the number of elements in a priority queue.
+        PriorityQueue<String> gg = new PriorityQueue<>(Arrays.asList("AIBEK", "hela", "MAWQ"));
+        System.out.println(gg.size());
     }
 }
 
