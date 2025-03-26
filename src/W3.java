@@ -254,6 +254,134 @@ public class W3 {
     //6. Write a Java program to count the number of elements in a priority queue.
         PriorityQueue<String> gg = new PriorityQueue<>(Arrays.asList("AIBEK", "hela", "MAWQ"));
         System.out.println(gg.size());
+
+
+
+/////////////////////////////////////HASH MAP////////////////////////////////////////////////////////// 
+//12. Write a Java program to get a collection view of the values contained in this map.
+        HashMap<Integer,String> hashMap= new HashMap<Integer,String>();
+            hashMap.put(1,"a");
+            hashMap.put(2,"b");
+            hashMap.put(3,"c");
+            hashMap.put(4,"d");
+            hashMap.put(5,"e");
+        System.out.println(hashMap.values());
+
+
+//11. Write a Java program to get a set view of the keys contained in this map.
+        HashMap<Integer,String> hashMap1= new HashMap<Integer,String>();
+            hashMap.put(1,"a");
+            hashMap.put(2,"b");
+            hashMap.put(3,"c");
+            hashMap.put(4,"d");
+            hashMap.put(5,"e");
+
+        Set keys = hashMap1.keySet();
+    
+        //Write a Java program to get the value of a specified key in a map.
+        HashMap<Integer,String> hashMap2= new HashMap<Integer,String>();
+            hashMap2.put(1,"a");
+            hashMap2.put(2,"b");
+            hashMap2.put(3,"c");
+            hashMap2.put(4,"d");
+            hashMap2.put(5,"e");
+
+            System.out.println(hashMap2.get(2));
+
+        //5. Write a Java program to check whether a map contains key-value mappings (empty) or not.
+            HashMap<Integer,String> hashMap3= new HashMap<Integer,String>();
+            System.out.println(hashMap3.isEmpty());
+
+        //Write a Java program to test if a map contains a mapping for the specified key
+            HashMap<Integer,String> hashMap4= new HashMap<Integer,String>();
+                hashMap4.put(1, "yntymak");
+                hashMap4.put(2, "akulenok");
+                hashMap4.put(3, "aibek");
+
+            int ifContains = 1;
+            if(hashMap4.containsKey(ifContains)){
+                System.out.println("YES is contains key " + ifContains);
+            }
+            else{
+                System.out.println("THere is no such key");
+            }
+        //Write a Java program to test if a map contains a mapping for the specified value.
+            HashMap<Integer,String> hashMap5= new HashMap<Integer,String>();
+                hashMap4.put(1, "yntymak");
+                hashMap4.put(2, "akulenok");
+                hashMap4.put(3, "aibek");
+            String ifContains2 = "yntymak";
+        
+            if(hashMap5.containsValue(ifContains2)){
+                System.out.println("Yes there is a value: " + ifContains2);
+            }
+            else{
+                System.out.println("no there is no such value");
+            }
+        
+
+
+/////////////////////////////////////TREE MAP//////////////////////////////////////////////////////////  
+/// 
+/// 
+/// Write a Java program to get a portion of a map whose keys are greater than a given key.
+        TreeMap < Integer, String > treeMap = new TreeMap < Integer, String > ();  
+
+        treeMap.put(1,"Hello");
+        treeMap.put(2, "world") ;
+
+        int targetKey = 2;
+
+        System.out.println(treeMap.tailMap(targetKey, true));//определетяет включать ли
+
+//Write a Java program to get the greatest key strictly less than the given key. Return null if there is no such key.
+        TreeMap < Integer, String > treeMap2 = new TreeMap < Integer, String > (); 
+            treeMap2.put(1,"Hello");
+            treeMap2.put(2, "world") ;
+            treeMap2.put(3, "aibek");
+            treeMap2.put(7, "ifContains2");
+
+           System.out.println(treeMap2.lowerKey(7));
+
+
+//Write a Java program to get all keys from a Tree Map.
+TreeMap < Integer, String > treeMap3 = new TreeMap < Integer, String > (); 
+        treeMap3.put(1,"Hello");
+        treeMap3.put(2, "world") ;
+        treeMap3.put(3, "aibek");
+        treeMap3.put(7, "ifContains2");
+            System.out.println(treeMap3.keySet());
+    
+//ite a Java program to get the greatest key less than or equal to the given key.
+        TreeMap < Integer, String > treeMap4 = new TreeMap < Integer, String > (); 
+            treeMap4.put(1,"Hello");
+            treeMap4.put(2, "world") ;
+            treeMap4.put(3, "aibek");
+            treeMap4.put(7, "ifContains2");
+            treeMap4.put(9, "moa");
+            System.out.println("a" +treeMap4.floorKey(3));
+
+//Write a Java program to get the least key greater than or equal to the given key. Returns null if there is no such key.
+        TreeMap < Integer, String > treeMap5 = new TreeMap < Integer, String > (); 
+        treeMap5.put(1,"Hello");
+        treeMap5.put(2, "world") ;
+        treeMap5.put(3, "aibek");
+        treeMap5.put(7, "ifContains2");
+        treeMap5.put(9, "moa");
+        System.out.println(treeMap4.ceilingKey(7));
+
+
+//Write a Java program to get a key-value mapping associated with the greatest key strictly less than the given key. Return null if there is no such key.
+
+        TreeMap < Integer, String > treeMap6 = new TreeMap < Integer, String > (); 
+            treeMap6.put(1,"Hello");
+            treeMap6.put(2, "world") ;
+            treeMap6.put(3, "aibek");
+            treeMap6.put(7, "ifContains2");
+            treeMap6.put(9, "moa");
+            System.out.println(treeMap4.lowerEntry(3));
+
+
     }
 }
 
