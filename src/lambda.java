@@ -92,9 +92,7 @@ class Six{
 
 class Severn{
     public static void main(String[] args) {
-        BiFunction<Integer, Integer, Integer> maxFunction = (x, y) -> x > y ? x : y;
-        BiFunction<Integer, Integer, Integer> minFunction = (x, y) -> x < y ? x : y;
-        System.out.println("max " + maxFunction.apply(1,2));
-        System.out.println("min " + minFunction.apply(4, 6));
+        ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1,2,3,4,5));
+        System.out.println(arr.get(arr.size()-1));
     }
 }
