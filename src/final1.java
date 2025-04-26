@@ -4,7 +4,9 @@ import java.util.Arrays;
 public class final1 {
     public static void main(String[] args) {
        
-        Nothing n = new Nothing();
+    Book b = new Book("harry", 12, true);
+    b.setName("yntymak");
+    System.out.println(b.getName());
         
         
     }
@@ -29,4 +31,22 @@ class Nothing{
     }
 
 }
+}
+
+class Book{
+    private String name;
+    private int pages;
+    private boolean isAble;
+    
+    public Book(String name, int pages, boolean isAble){
+        this. name = name;
+        this. pages = pages; 
+        this.isAble = isAble;
+    }
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
 }
