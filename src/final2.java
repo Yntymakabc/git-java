@@ -1,7 +1,14 @@
+import java.util.ArrayList;
+
 public class final2 {
     public static void main(String[] args) {
         Preparation pr = new Preparation();
-        pr.checkIf(101010);
+        //pr.checkIf(101010);
+        int[] arr = {1,23,4,5,4,3,2};
+        // for(int i=0; i<arr.length; i++){
+        //     System.out.println(arr[i]);
+            
+        }
         
     }
     
@@ -21,4 +28,34 @@ class Preparation{
     }
 }
 
-class 
+class Book{
+    String name;
+    int pages; 
+    String author;
+
+    public Book(String name, int pages, String author){
+        this.name = name;
+        this.pages = pages;
+        this.author = author;
+    }
+
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+
+}
+
+class Library{
+    ArrayList<Book> arr;
+    public Library(){
+        arr = new ArrayList<>();
+    }
+
+    public void addBook(Book book){
+        arr.add(book);
+        System.out.println( book.getName() + " was successfully added ");
+    }
+}
