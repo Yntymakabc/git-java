@@ -8,7 +8,11 @@ public class final2 {
         // for(int i=0; i<arr.length; i++){
         //     System.out.println(arr[i]);
             
-        }
+        // }
+        Library l = new Library();
+        Book b = new Book("Subtle art of not giving a f*ck", 156, "aibek shyshybaev");
+        l.addBook(b);
+        l.showBooks();
         
     }
     
@@ -57,5 +61,10 @@ class Library{
     public void addBook(Book book){
         arr.add(book);
         System.out.println( book.getName() + " was successfully added ");
+    }
+    public void showBooks(){
+        for(Book i:arr){
+            System.out.println(i.getName());
+        }
     }
 }
