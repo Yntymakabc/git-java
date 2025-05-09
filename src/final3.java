@@ -1,7 +1,14 @@
+import java.util.*;
 public class final3 {
     public static void main(String[] args) {
         Animal l = new Lion("lio", 0);
-        l.makeSound();
+        Animal p = new Parrot("null", 4);
+        Zoo z = new Zoo();
+        z.addAnimal(l);
+        z.addAnimal(p);
+        z.feedAnimal();
+        z.makeSound();
+
     }
 }
 
@@ -63,4 +70,30 @@ class Parrot extends Animal implements Soundable{
     public void makeSound(){
         System.out.println("repeating your words");
     }
+}
+
+class Zoo{
+    List<Animal> arr ;
+    public Zoo(){
+    arr = new ArrayList<>();
+    };
+
+    public void addAnimal(Animal animal){
+        arr.add(animal);
+    }
+
+    public void feedAnimal(){
+        for(Animal animal:arr){
+            animal.eat();
+        }
+    }
+
+    public void makeSound(){
+        for(Animal i: arr){
+            if(i instanceof Soundable){
+                i.makeSound();
+            }
+        }
+    }
+
 }
