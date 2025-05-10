@@ -18,14 +18,16 @@ class Anonymous{
     
 
     interface Car{
-        void getInfo();
+        void getInfo(int a, int b);
     }
     Car c = new Car() {
         @Override
-        public void getInfo() {
-            System.out.println("anonynous function ");
+        public void getInfo(int a, int b) {
+            System.out.println("the resultis:"+a+b);
         }
     };
+
+    Car c2 = (int a, int b)->System.out.println(a+b + " hello world");
     
 }
 }
