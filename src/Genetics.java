@@ -43,3 +43,35 @@
 //          System.out.println(g.getSize());
 //      }
 // }
+
+// import java.util.ArrayList;
+
+// public class Genetics {
+//     public static void main(String[] args) {
+//         Storage<Integer> st = new Storage();
+//         st.addItem(1);
+//         st.addItem(4);
+//         System.out.println(st.printAll());
+//         System.out.println(st.getByIndex(0));
+//     }
+    
+// }
+
+// class Storage<T>{
+//     ArrayList<T> arr;
+//     public Storage(){
+//         arr = new ArrayList<>();
+//     }
+
+//     public void addItem(T item){
+//         arr.add(item);
+//     }
+
+//     public T getByIndex(int index){
+//         return arr.get(index);
+//     }
+
+//     public ArrayList<T> printAll(){
+//         return arr;
+//     }
+// }
